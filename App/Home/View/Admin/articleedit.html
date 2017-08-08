@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>文章管理</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/Public/Extjs42/resources/css/ext-all-gray.css" rel="stylesheet" type="text/css"/>
+        <script src="/Public/Extjs42/bootstrap.js" type="text/javascript"></script>
+        <script src="/Public/pan.js" type="text/javascript"></script>        
+        <link href="/Public/bootstrap32/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>       
+        <script src="/Public/jquery-1.12.0.min.js" type="text/javascript"></script>  
+        <script src="/Public/plupload.full.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.UEDITOR_HOME_URL = "/Public/ueditor/"; //编辑器项目路径
+        </script>
+        <script charset="UTF-8" src="/Public/ueditor/ueditor.config.js" type="text/javascript"></script>
+        <script charset="UTF-8" src="/Public/ueditor/ueditor.all.js" type="text/javascript"></script>   
+    </head>
+    <body>
+        <div id="formpanel"></div>
+        <div id="editor" style="height:250px;width: 99.99%"></div>
+        <script type="text/javascript">
+            var article_id = getQueryString("article_id");
+            var ue = UE.getEditor('editor');
+            Ext.onReady(function() {
+                var field_id = Ext.create('Ext.form.field.Hidden', {
+                    name: 'article_id'
+                });
+                var field_title = Ext.create('Ext.form.field.Text', {
+                    name: 'title',
+                    fieldLabel: '文章标题',
+                    allowBlank: false,
+                    blankText: '文章标题不能为空!'
+                });
+                var store_catigory = Ext.create('Ext.data.JsonStore', {
+                    fields: ['code', 'name'],
+                    data: [{code: '107', name: '品牌资讯'}, {code: '108', name: '真男人魅力'}, {code: '2', name: '品牌故事'}]
+                });
+                var combo_catigory = Ext.create('Ext.form.field.ComboBox', {
+                    name: 'cat_id',
+                    store: store_catigory,
+                    value: '107',
+                    fieldLabel: '文章类型',
+                    displayField: 'name',
+                    valueField: 'code',
+                    queryMode: 'local',
+                    editable: false,
+                    allowBlank: false,
+                    blankText: '模块类型不能为空!'
+                });
+                var store_open = Ext.create('Ext.data.JsonStore', {
+                    fields: ['code', 'name'],
+                    data: [{code: '1', name: '是'}, {code: '0', name: '否'}]
+                });
+                var combo_open = Ext.create('Ext.form.field.ComboBox', {
+                    name: 'is_open',
+                    store: store_open,
+                    fieldLabel: '是否发布',
+                    displayField: 'name',
+                    valueField: 'code',
+                    queryMode: 'local',
+                    editable: false,
+                    forceSelection: true,
+                    value: '1'
+                });
+                var field_imgurl = Ext.create('Ext.form.field.Text', {
+                    id: 'img_url',
+                    name: 'img_url',
+                    margin: 0,
+                    flex: .85,
+                    readOnly: false,
+                    listeners: {change: function(field_imgurl, newValue, oldValue, eOpts) {
+                            if (oldValue) {
+                                Ext.Ajax.request({
+                                    url: '/index.php?c=Admin&a=deleteimg',
+                                    method: "POST",
+                                    params: {filename: oldValue}
+                                });
+                            }
+                        }
+                    }
+                });
+                var btn_upload = Ext.create('Ext.button.Button', {
+                    id: 'uploader1',
+                    text: '<span class="glyphicon glyphicon-upload"></span>',
+                    flex: .15,
+                    margin: 0
+                });
+                var field_container1 = {
+                    xtype: 'fieldcontainer',
+                    fieldLabel: '缩略图',
+                    layout: 'hbox',
+                    items: [field_imgurl, btn_upload]
+                };
+                var field_content = Ext.create('Ext.form.field.Hidden', {
+                    name: 'content'
+                });
+                var formpanel = Ext.create('Ext.form.Panel', {
+                    title: '文章管理->文章编辑',
+                    renderTo: 'formpanel',
+                    height: 150,
+                    fieldDefaults: {
+                        margin: '0 10 0 10',
+                        msgTarget: 'under',
+                        columnWidth: 0.48
+                    },
+                    items: [
+                        {layout: 'column', height: 42, margin: '5 0 0 0', border: 0, items: [field_title, combo_catigory]},
+                        {layout: 'column', height: 42, border: 0, items: [combo_open, field_container1]}, field_content,
+                        field_id],
+                    buttonAlign: 'center',
+                    buttons: [
+                        {text: '<i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i>保存', handler: function() {
+                                if (formpanel.getForm().isValid())
+                                {
+                                    field_content.setValue(ue.getContent());
+                                    var formdata = Ext.encode(formpanel.getForm().getValues());
+                                    Ext.Ajax.request({
+                                        url: '/index.php?c=Admin&a=articlesave',
+                                        method: "POST",
+                                        params: {'formdata': formdata},
+                                        success: function(response, option) {
+                                            if (response.responseText) {
+                                                Ext.MessageBox.alert('提示', '保存成功！', function() {
+                                                    window.location.href = "/index.php?c=Admin&a=articlelist";
+                                                });
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+                        },
+                        {text: '<i class="glyphicon glyphicon-arrow-left" aria-hidden="true"></i>返回', handler: function() {
+                                window.location.href = "/index.php?c=Admin&a=articlelist";
+                            }
+                        }]
+                });
+                var task = new Ext.util.DelayedTask(function() {
+                    //  ue.addListener('ready', function() {
+                    //   alert('hello');
+                    ue.setContent(field_content.getValue());//因为有可能ue还没有初始化好,所以需要延迟赋值
+                    //  });
+                });
+                if (article_id) {
+                    Ext.Ajax.request({
+                        url: '/index.php?c=Admin&a=article_load',
+                        method: "POST",
+                        params: {article_id: article_id},
+                        success: function(response, option) {
+                            var formdata = Ext.decode(response.responseText);
+                            formpanel.getForm().setValues(formdata);
+                            //   ue.setContent(field_content.getValue());//为了解决IE兼容问题
+                            task.delay(3000);
+
+                        }
+                    });
+                }
+                ini_uploader1();
+            });
+            function ini_uploader1() {
+                var uploader1 = new plupload.Uploader({
+                    runtimes: 'html5,flash,silverlight,html4',
+                    browse_button: 'uploader1', // you can pass an id...
+                    url: '/index.php?c=Admin&a=upload',
+                    flash_swf_url: '/Public/Moxie.swf',
+                    silverlight_xap_url: '/Public//Moxie.xap',
+                    filters: {
+                        max_file_size: '5000mb',
+                        mime_types: [
+                            {title: "Image files", extensions: "*"},
+                            {title: "Zip files", extensions: "zip,rar"}
+                        ]
+                    }
+                });
+                uploader1.init();
+                uploader1.bind('FilesAdded', function(up, files) {
+                    uploader1.start();
+                });
+                uploader1.bind('FileUploaded', function(up, file, response) {
+                    var result = Ext.decode(response.response).file;
+                    Ext.getCmp('img_url').setValue(result.savename);
+                });
+            }
+        </script>        
+
+    </body>
+</html>

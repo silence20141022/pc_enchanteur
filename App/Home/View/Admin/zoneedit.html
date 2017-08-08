@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/Public/Extjs42/resources/css/ext-all-gray.css" rel="stylesheet" type="text/css"/>
+        <script src="/Public/Extjs42/bootstrap.js" type="text/javascript"></script>
+        <script src="/Public/pan.js" type="text/javascript"></script> 
+        <script src="/Public/plupload.full.min.js" type="text/javascript"></script>
+        <link href="/Public/bootstrap32/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>       
+        <script src="/Public/jquery-1.12.0.min.js" type="text/javascript"></script> 
+        <script src="/Public/bootstrap32/js/bootstrap.min.js" type="text/javascript"></script>
+        <style>
+            .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+                padding: 2px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .badge{
+                background-color: rgb(51,122,183);
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var id = getQueryString("id");
+            var store_detail;
+            Ext.onReady(function() {
+                var field_id = Ext.create('Ext.form.field.Hidden', {
+                    name: 'id'
+                });
+                var field_name = Ext.create('Ext.form.field.Text', {
+                    name: 'name',
+                    fieldLabel: '模块名称',
+                    allowBlank: false,
+                    blankText: '模块名称不能为空!'
+                });
+                var store_type = Ext.create('Ext.data.JsonStore', {
+                    fields: ['code', 'name'],
+                    data: [{code: 'banner', name: 'BANNER'}, {code: 'slide', name: 'SLIDE'}]
+                });
+                var combo_type = Ext.create('Ext.form.field.ComboBox', {
+                    name: 'type',
+                    store: store_type,
+                    readOnly: id,
+                    fieldLabel: '模块类型',
+                    displayField: 'name',
+                    valueField: 'code',
+                    queryMode: 'local',
+                    editable: false,
+                    allowBlank: false,
+                    blankText: '模块类型不能为空!'
+                });
+                var field_sequence = Ext.create('Ext.form.field.Number', {
+                    name: 'sequence',
+                    fieldLabel: '显示顺序',
+                    allowBlank: false,
+                    blankText: '显示顺序不能为空!',
+                    decimalPrecision: 4
+                });
+                var store_status = Ext.create('Ext.data.JsonStore', {
+                    fields: ['code', 'name'],
+                    data: [{code: '1', name: '启用'}, {code: '0', name: '停用'}]
+                });
+                var combo_status = Ext.create('Ext.form.field.ComboBox', {
+                    name: 'status',
+                    store: store_status,
+                    fieldLabel: '状态',
+                    displayField: 'name',
+                    valueField: 'code',
+                    queryMode: 'local',
+                    editable: false,
+                    forceSelection: true,
+                    value: '1'
+                });
+                var store_terminal = Ext.create('Ext.data.JsonStore', {
+                    fields: ['code', 'name'],
+                    data: [{code: '1', name: 'PC'}, {code: '0', name: 'WAP'}]
+                });
+                var combo_terminal = Ext.create('Ext.form.field.ComboBox', {
+                    name: 'ispc',
+                    store: store_terminal,
+                    fieldLabel: '所属终端',
+                    displayField: 'name',
+                    valueField: 'code',
+                    queryMode: 'local',
+                    editable: false,
+                    forceSelection: true,
+                    value: '1'
+                });
+                var field_bannerscript = Ext.create('Ext.form.field.Text', {
+                    id: 'field_bannerscript',
+                    name: 'bannerscript',
+                    fieldLabel: 'BANNER监控脚本'
+                });
+                var field_bannerfirst = Ext.create('Ext.form.field.Text', {
+                    id: 'bannerfirst',
+                    name: 'bannerfirst',
+                    margin: 0,
+                    flex: .85,
+                    readOnly: true,
+                    listeners: {change: function(field_bannerfirst, newValue, oldValue, eOpts) {
+                            if (oldValue) {
+                                Ext.Ajax.request({
+                                    url: '/index.php?c=Admin&a=deleteimg',
+                                    method: "POST",
+                                    params: {filename: oldValue}
+                                });
+                            }
+                        }
+                    }
+                });
+                var field_bannerfirstlink = Ext.create('Ext.form.field.Text', {
+                    id: 'bannerfirstlink',
+                    name: 'bannerfirstlink',
+                    fieldLabel: 'BANNER图一链接'
+                });
+                var field_container1 = {
+                    xtype: 'fieldcontainer',
+                    fieldLabel: 'BANNER图一',
+                    layout: 'hbox',
+                    items: [field_bannerfirst, {id: 'uploader1', xtype: 'button',
+                            text: '<span class="glyphicon glyphicon-upload"></span>', flex: .15, margin: 0}]
+                };
+                var field_bannersecond = Ext.create('Ext.form.field.Text', {
+                    id: 'bannersecond',
+                    name: 'bannersecond',
+                    margin: 0,
+                    flex: .85,
+                    readOnly: true,
+                    listeners: {change: function(field_bannersecond, newValue, oldValue, eOpts) {
+                            if (oldValue) {
+                                Ext.Ajax.request({
+                                    url: '/index.php?c=Admin&a=deleteimg',
+                                    method: "POST",
+                                    params: {filename: oldValue}
+                                });
+                            }
+                        }
+                    }
+                });
+                var field_bannersecondlink = Ext.create('Ext.form.field.Text', {
+                    id: 'bannersecondlink',
+                    name: 'bannersecondlink',
+                    fieldLabel: 'BANNER图二链接'
+                });
+                var field_container2 = {
+                    xtype: 'fieldcontainer',
+                    fieldLabel: 'BANNER图二',
+                    layout: 'hbox',
+                    items: [field_bannersecond, {id: 'uploader2', xtype: 'button',
+                            text: '<span class="glyphicon glyphicon-upload"></span>', flex: .15, margin: 0}]
+                };
+                var field_remark = Ext.create('Ext.form.field.Text', {
+                    name: 'remark',
+                    fieldLabel: '备注'
+                });
+                var field_layouttemplate = Ext.create('Ext.form.field.Text', {
+                    name: 'layouttemplate',
+                    hidden: true
+                });
+                //选择布局类型
+                var field_layout = Ext.create('Ext.form.RadioGroup', {
+                    columns: 6,
+                    fieldLabel: '商品图片布局',
+                    id: 'field_layout',
+                    height: 40,
+                    columnWidth: 1,
+                    items: [
+                        {boxLabel: '<table class="table table-bordered" style="margin-bottom:0px"><tr><td><span class="badge">1</span></td><td><span class="badge">2</span></td></tr></table>',
+                            name: 'layout', inputValue: '1'},
+                        {boxLabel: '<table class="table table-bordered" style="margin-bottom:0px"><tr><td><span class="badge">1</span></td><td><span class="badge">2</span></td><td><span class="badge">3</span></td></tr></table>',
+                            name: 'layout', inputValue: '2'},
+                        {boxLabel: '<table class="table table-bordered" style="margin-bottom:0px"><tr><td><span class="badge">1</span></td><td><span class="badge">2</span></td></tr><tr><td><span class="badge">3</span></td><td><span class="badge">4</span></td></tr></table>',
+                            name: 'layout', inputValue: '3'},
+                        {boxLabel: '<table class="table table-bordered" style="margin-bottom:0px"><tr><td><span class="badge">1</span></td><td><span class="badge">2</span></td><td><span class="badge">3</span></td></tr><tr><td><span class="badge">4</span></td><td><span class="badge">5</span></td><td><span class="badge">6</span></td></tr></table>',
+                            name: 'layout', inputValue: '4'},
+                        {boxLabel: '<table class="table table-bordered" style="margin-bottom:0px"><tr><td><span class="badge">1</span></td><td><span class="badge">2</span></td></tr></table><table class="table table-bordered" style="margin-bottom:0px"><tr><td><span class="badge">3</span></td><td><span class="badge">4</span></td><td><span class="badge">5</span></td></tr></table>',
+                            name: 'layout', inputValue: '5'},
+                        {boxLabel: '<table class="table table-bordered" style="margin-bottom:0px"><tr><td rowspan="2"><span class="badge">1</span></td><td><span class="badge">2</span></td></tr><tr><td><span class="badge">3</span></td></tr></table>',
+                            name: 'layout', inputValue: '6'}
+                    ]
+                });
+                var field_backgroundcolor = Ext.create('Ext.form.field.Text', {
+                    name: 'backgroundcolor',
+                    fieldLabel: '商品区背景色'
+                });
+                var formpanel = Ext.create('Ext.form.Panel', {
+                    title: '特价中心->区块维护',
+                    region: 'center',
+                    height: 42,
+                    fieldDefaults: {
+                        margin: '0 10 0 10',
+                        msgTarget: 'under',
+                        columnWidth: 0.5
+                    },
+                    items: [
+                        {layout: 'column', height: 42, margin: '5 0 0 0', border: 0, items: [field_name, combo_type]},
+                        {layout: 'column', height: 42, border: 0, items: [field_sequence, combo_status]},
+                        {layout: 'column', height: 42, border: 0, items: [combo_terminal, field_bannerscript]},
+                        {layout: 'column', height: 42, border: 0, items: [field_container1, field_bannerfirstlink]},
+                        {layout: 'column', height: 42, border: 0, items: [field_container2, field_bannersecondlink]},
+                        {layout: 'column', height: 60, border: 0, items: [field_layout]},
+                        {layout: 'column', height: 42, border: 0, items: [field_remark, field_backgroundcolor]},
+                        field_id, field_layouttemplate],
+                    buttonAlign: 'center'
+                });
+                //图片及链接明细
+                store_detail = Ext.create('Ext.data.JsonStore', {
+                    fields: ['id', 'spcenter_id', 'imgpath', 'linkurl', 'createtime', 'imgscript', 'sequence', 'remark'],
+                    proxy: {
+                        type: 'ajax',
+                        url: '/index.php?c=Admin&a=loaddetail&id=' + id,
+                        reader: {
+                            root: 'rows',
+                            type: 'json'
+                        }
+                    },
+                    autoLoad: true
+                });
+                var toolbar = Ext.create('Ext.toolbar.Toolbar', {
+                    items: [
+                        {id: 'pickfiles', text: '<span class="glyphicon glyphicon-upload"></span>&nbsp;上传文件'}, '-',
+                        {text: '<span class="glyphicon glyphicon-trash"></span>&nbsp;删除', handler: function() {
+                                var recs = gridpanel.getSelectionModel().getSelection();
+                                if (recs.length == 0) {
+                                    Ext.MessageBox.alert('提示', '请选择需要删除的记录！');
+                                    return;
+                                }
+                                if (recs[0].get("id"))
+                                {
+                                    Ext.Ajax.request({
+                                        url: '/index.php?c=Admin&a=deldetail',
+                                        method: "POST",
+                                        params: {filename: recs[0].get("imgpath"), id: recs[0].get("id")},
+                                        success: function(response, option) {
+                                            alert(response.responseText);
+                                            if (response.responseText) {
+                                                //formpanel.getForm().setValues(formdata);
+                                                store_detail.remove(recs[0]);
+                                            }
+                                        }
+                                    });
+                                }
+                                else
+                                {
+                                    store_detail.remove(recs[0]);
+                                }
+                            }
+                        }, '-', {text: '<i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i>保存', handler: function() {
+                                if (formpanel.getForm().isValid())
+                                {
+                                    if (field_layout.getChecked().length > 0)
+                                    {
+                                        field_layouttemplate.setValue(field_layout.getChecked()[0].boxLabel);
+                                    }
+                                    var formdata = Ext.encode(formpanel.getForm().getValues());
+                                    var detaildata = Ext.encode(Ext.pluck(store_detail.data.items, 'data'));
+                                    Ext.Ajax.request({
+                                        url: '/index.php?c=Admin&a=save',
+                                        method: "POST",
+                                        params: {'formdata': formdata, detaildata: detaildata},
+                                        success: function(response, option) {
+                                         alert(response.responseText)
+                                            if (response.responseText) {
+                                                Ext.MessageBox.alert('提示', '保存成功！', function() {
+                                                    window.location.href = "/index.php?c=Admin&a=splist";
+                                                });
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+                        }, {text: '<i class="glyphicon glyphicon-arrow-left" aria-hidden="true"></i>返回', handler: function() {
+                                window.location.href = "/index.php?c=Admin&a=splist";
+                            }
+                        }
+                    ]
+                });
+                var gridpanel = Ext.create('Ext.grid.Panel', {
+                    region: 'south',
+                    tbar: toolbar,
+                    store: store_detail,
+                    plugins: [Ext.create('Ext.grid.plugin.CellEditing', {
+                            clicksToEdit: 1
+                        })],
+                    height: 250,
+                    selModel: {selType: 'checkboxmodel'},
+                    columns: [
+                        {xtype: 'rownumberer', width: 35},
+                        {header: 'id', dataIndex: 'id', hidden: true},
+                        {header: '图片名称', dataIndex: 'imgpath', width: 130},
+                        {header: '链接地址', dataIndex: 'linkurl', flex: 1, field: {xtype: 'textfield'}},
+                        {header: '监控脚本', dataIndex: 'imgscript', width: 200, field: {xtype: 'textfield'}},
+                        {header: '显示顺序', dataIndex: 'sequence', width: 70, field: {xtype: 'numberfield'}},
+                        {header: '上传时间', dataIndex: 'createtime', width: 120},
+                        {header: '备注', dataIndex: 'remark', width: 120, field: {xtype: 'textfield'}}
+                    ],
+                    viewConfig: {
+                        enableTextSelection: true
+                    }
+                });
+                var viewport = Ext.create('Ext.container.Viewport', {
+                    layout: 'border',
+                    items: [formpanel, gridpanel]
+                });
+                if (id) {
+                    Ext.Ajax.request({
+                        url: '/index.php?c=Admin&a=loadform',
+                        method: "POST",
+                        params: {id: id},
+                        success: function(response, option) {
+                            var formdata = Ext.decode(response.responseText);
+                            formpanel.getForm().setValues(formdata);
+                            ini_form(formdata.type);
+                            if (formdata.type == 'banner')
+                            {
+                                ini_uploader1();
+                                ini_uploader2();
+                            }
+                        }
+                    });
+                }
+                upload_ini();
+            }
+            );
+            function render(value, cellmeta, record, rowIndex, columnIndex, store) {
+                var rtn = "";
+                var dataindex = cellmeta.column.dataIndex;
+                switch (dataindex) {
+                    case "imgpath":
+                        var imgview = Ext.create('Ext.Img', {
+                            src: 'http://www.sencha.com/img/20110215-feat-html5.png'
+                        });
+                        rtn = '<img style="width:50px;height:50px" src="/Uploads/' + value + '"/>';
+                        break;
+                }
+                return rtn;
+            }
+            function upload_ini() {
+                uploader = new plupload.Uploader({
+                    runtimes: 'html5,flash,silverlight,html4',
+                    browse_button: 'pickfiles', // you can pass an id...
+                    url: '/index.php?c=Admin&a=upload',
+                    flash_swf_url: '/Public/Moxie.swf',
+                    silverlight_xap_url: '/Public/Moxie.xap',
+                    filters: {
+                        max_file_size: '5000mb',
+                        mime_types: [
+                            {title: "Image files", extensions: "*"},
+                            {title: "Zip files", extensions: "zip,rar"}
+                        ]
+                    }
+                });
+                uploader.init();
+                uploader.bind('FilesAdded', function(up, files) {
+                    uploader.start();
+                });
+                uploader.bind('FileUploaded', function(up, file, response) {
+                    var result = Ext.decode(response.response).file;
+                    store_detail.insert(store_detail.data.length, {imgpath: result.savename, sequence: store_detail.data.length});
+                });
+            }
+            function ini_uploader1() {
+                var uploader1 = new plupload.Uploader({
+                    runtimes: 'html5,flash,silverlight,html4',
+                    browse_button: 'uploader1', // you can pass an id...
+                    url: '/index.php?c=Admin&a=upload',
+                    flash_swf_url: '/Public/Moxie.swf',
+                    silverlight_xap_url: '/Public//Moxie.xap',
+                    filters: {
+                        max_file_size: '5000mb',
+                        mime_types: [
+                            {title: "Image files", extensions: "*"},
+                            {title: "Zip files", extensions: "zip,rar"}
+                        ]
+                    }
+                });
+                uploader1.init();
+                uploader1.bind('FilesAdded', function(up, files) {
+                    uploader1.start();
+                });
+                uploader1.bind('FileUploaded', function(up, file, response) {
+                    var result = Ext.decode(response.response).file;
+                    Ext.getCmp('bannerfirst').setValue(result.savename);
+                    //debugger
+                    // alert(result.savename);
+                });
+            }
+            function ini_uploader2() {
+                var uploader2 = new plupload.Uploader({
+                    runtimes: 'html5,flash,silverlight,html4',
+                    browse_button: 'uploader2', // you can pass an id...
+                    url: '/index.php?c=Admin&a=upload',
+                    flash_swf_url: '/Public/Moxie.swf',
+                    silverlight_xap_url: '/Public/Moxie.xap',
+                    filters: {
+                        max_file_size: '5000mb',
+                        mime_types: [
+                            {title: "Image files", extensions: "*"},
+                            {title: "Zip files", extensions: "zip,rar"}
+                        ]
+                    }
+                });
+                uploader2.init();
+                uploader2.bind('FilesAdded', function(up, files) {
+                    uploader2.start();
+                });
+                uploader2.bind('FileUploaded', function(up, file, response) {
+                    var result = Ext.decode(response.response).file;
+                    Ext.getCmp('bannersecond').setValue(result.savename);
+                });
+            }
+            function ini_form(type) {
+                Ext.getCmp('field_bannerscript').setDisabled(type == 'slide');
+                Ext.getCmp('bannerfirst').setDisabled(type == 'slide');
+                Ext.getCmp('bannerfirstlink').setDisabled(type == 'slide');
+                Ext.getCmp('bannersecond').setDisabled(type == 'slide');
+                Ext.getCmp('bannersecondlink').setDisabled(type == 'slide');
+                Ext.getCmp('field_layout').setDisabled(type == 'slide');
+            }
+        </script>
+    </body>
+</html>

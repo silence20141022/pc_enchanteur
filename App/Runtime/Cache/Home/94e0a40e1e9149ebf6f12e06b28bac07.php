@@ -1,0 +1,109 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/Public/Extjs42/resources/css/ext-all-gray.css" rel="stylesheet" type="text/css"/>
+        <script src="/Public/Extjs42/bootstrap.js" type="text/javascript"></script> 
+        <link href="/Public/bootstrap32/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>   
+        <script src="/Public/pan.js" type="text/javascript"></script> 
+    </head>
+    <body>
+        <script type="text/javascript">
+            Ext.onReady(function() {
+                var toolbar = Ext.create('Ext.toolbar.Toolbar', {
+                    items: [
+                        {
+                            text: '<span class="glyphicon glyphicon-plus"></span>&nbsp;添加', handler: function() {
+                                window.location.href = "/index.php?c=Admin&a=zoneedit";
+                            }
+                        }
+                        , '-', {
+                            text: '<span class="glyphicon glyphicon-edit"></span>&nbsp;修改', handler: function() {
+                                var recs = gridpanel.getSelectionModel().getSelection();
+                                if (!recs || recs.length <= 0) {
+                                    Ext.Msg.alert("提示", "请选择修改记录!");
+                                    return;
+                                }
+                                window.location.href = "/index.php?c=Admin&a=zoneedit&id=" + recs[0].get('id');
+                            }
+                        }
+                        , '-', {
+                            text: '<span class="glyphicon glyphicon-trash"></span>&nbsp;删除', handler: function() {
+                                var recs = gridpanel.getSelectionModel().getSelection();
+                                if (recs.length == 0) {
+                                    Ext.Msg.alert("提示", "请选择要删除的记录!");
+                                    return;
+                                }
+                                Ext.Ajax.request({
+                                    url: '/index.php?c=Admin&a=delsp',
+                                    params: {id: recs[0].get("id")},
+                                    success: function(response, option) {
+                                        if (response.responseText) {
+                                            Ext.Msg.alert("提示", "删除成功!");
+                                            store.remove(recs[0]);
+                                        }
+                                    }
+                                });
+                            }
+                        }
+                    ]
+                });
+                var store = Ext.create('Ext.data.JsonStore', {
+                    fields: ['id', 'name', 'type', 'status', 'createtime', 'remark', 'sequence', 'ispc','lastupdatetime'],
+                    pageSize: 20,
+                    proxy: {
+                        type: 'ajax',
+                        url: '/index.php?c=Admin&a=spload',
+                        reader: {
+                            type: 'json',
+                            totalProperty: 'total',
+                            root: 'data'
+                        }
+                    },
+                    autoLoad: true
+                });
+
+                var pgbar = Ext.create('Ext.toolbar.Paging', {
+                    displayMsg: '显示 {0} - {1} 条,共计 {2} 条',
+                    store: store,
+                    displayInfo: true
+                });
+                var gridpanel = Ext.create('Ext.grid.Panel', {
+                    title: '特价中心',
+                    region: 'center',
+                    store: store,
+                    tbar: toolbar,
+                    selModel: {selType: 'checkboxmodel'},
+                    bbar: pgbar,
+                    columns: [
+                        {xtype: 'rownumberer', width: 35},
+                        {header: 'id', dataIndex: 'id', hidden: true},
+                        {header: '模块名称', dataIndex: 'name', width: 150},
+                        {header: '类型', dataIndex: 'type', width: 150},
+                        {header: '显示序号', dataIndex: 'sequence', width: 80},
+                        {header: '所属终端', dataIndex: 'ispc', width: 80, renderer: render},
+                        {header: '创建时间', dataIndex: 'createtime', width: 150},
+                        {header: '最后更新时间', dataIndex: 'lastupdatetime', width: 150},
+                        {header: '备注', dataIndex: 'remark', flex: 1}
+                    ]
+                });
+                var viewport = Ext.create('Ext.container.Viewport', {
+                    layout: 'border',
+                    items: [gridpanel]
+                });
+            });
+            function render(value, cellmeta, record, rowIndex, columnIndex, store) {
+                var rtn = "";
+                var dataindex = cellmeta.column.dataIndex;
+                switch (dataindex) {
+                    case "ispc":
+                        rtn = value == 1 ? "PC端" : "WAP端";
+                        break
+                }
+                return rtn;
+            }
+        </script>  
+    </body>
+</html>

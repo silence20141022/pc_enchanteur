@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>艾诗-香水沐浴</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js" type="text/javascript"></script>
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <link href="/Public/style.css" rel="stylesheet" type="text/css"/> 
+        <link href="/Public/iconfont/iconfont.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <include file="./App/Home/View/public/header.html" />    
+    <div class="container">  
+        <table class="table" style="margin-bottom:0px">
+            <volist name="article_data" id="vo" key="k" >
+                <tr>
+                    <td style="width: 40%">
+                        <a href="/index.php?c=Index&a=articleview&article_id={$vo.article_id}">
+                            <img src='http://www.enchanteur.com.cn/Uploads/{$vo.img_url|default="noimg.jpg"}'  class="img-responsive"/>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/index.php?c=Index&a=articleview&article_id={$vo.article_id}">
+                            <span style="font-weight: bold"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>{$vo.title}</span>
+                        </a>
+                        <span style="float:right;font-size: 10px"><i class="icon iconfont">&#xe60a;</i>{$vo.add_time}<span class="badge">{$vo.readtimes}</span></span>
+                        <p><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>{$vo.description}</p>  
+                    </td>
+                </tr>  
+            </volist>   
+        </table> 
+        <ul class="pagination">{$page}</ul> 
+    </div>
+    <include file="./App/Home/View/public/foot.html" />     
+</body>
+</html>

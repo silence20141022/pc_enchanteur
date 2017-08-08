@@ -1,0 +1,808 @@
+[ 2017-05-13T19:08:49+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:08:50+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0890s ]
+
+[ 2017-05-13T19:09:07+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:09:08+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0830s ]
+
+[ 2017-05-13T19:09:21+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:09:21+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:09:22+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0830s ]
+
+[ 2017-05-13T19:09:32+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:09:33+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:09:34+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0880s ]
+
+[ 2017-05-13T19:11:52+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:11:53+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0810s ]
+
+[ 2017-05-13T19:12:00+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:01+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0800s ]
+
+[ 2017-05-13T19:12:03+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:04+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-13T19:12:04+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0860s ]
+
+[ 2017-05-13T19:12:11+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:11+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:11+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0830s ]
+
+[ 2017-05-13T19:12:13+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:13+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:14+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0840s ]
+
+[ 2017-05-13T19:12:14+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:15+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:15+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0750s ]
+
+[ 2017-05-13T19:12:16+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:16+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:17+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0850s ]
+
+[ 2017-05-13T19:12:17+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:17+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:18+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0750s ]
+
+[ 2017-05-13T19:12:18+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:19+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:19+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0840s ]
+
+[ 2017-05-13T19:12:20+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:20+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:21+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0890s ]
+
+[ 2017-05-13T19:12:47+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:12:48+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:12:49+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0880s ]
+
+[ 2017-05-13T19:15:34+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:15:34+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0790s ]
+
+[ 2017-05-13T19:15:48+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:15:57+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:15:58+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:15:58+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0780s ]
+
+[ 2017-05-13T19:19:51+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:19:52+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0860s ]
+
+[ 2017-05-13T19:20:02+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:20:24+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:20:24+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:20:25+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0800s ]
+
+[ 2017-05-13T19:21:44+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:21:45+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0760s ]
+
+[ 2017-05-13T19:21:50+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:21:50+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-13T19:21:51+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0840s ]
+
+[ 2017-05-13T19:24:23+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-13T19:24:24+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0920s ]
+
+[ 2017-05-13T19:24:31+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:24:32+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:24:32+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0780s ]
+
+[ 2017-05-13T19:26:27+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:26:27+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0830s ]
+
+[ 2017-05-13T19:26:29+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:26:30+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:26:30+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0800s ]
+
+[ 2017-05-13T19:26:52+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteurproduct_ganenhuikui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T19:29:00+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T19:29:01+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0820s ]
+
+[ 2017-05-13T19:29:23+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteurproduct_ganenhuikui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T22:35:26+08:00 ] ::1 /Index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T22:37:03+08:00 ] ::1 /Index.php?XDEBUG_SESSION_START=12783
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T22:37:14+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T22:37:15+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-13T22:37:16+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0800s ]
+
+[ 2017-05-13T22:37:49+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T22:37:50+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-13T22:37:50+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0760s ]
+
+[ 2017-05-13T22:38:08+08:00 ] ::1 /Index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-13T22:38:14+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T22:38:15+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-13T22:38:15+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0770s ]
+
+[ 2017-05-13T22:39:34+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-13T22:39:34+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0860s ]
+
+[ 2017-05-13T22:41:01+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-05-13T22:41:13+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0880s ]
+
+[ 2017-05-13T22:41:21+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteur_onsale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T22:44:12+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T22:44:12+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteurproduct_ganenhuikui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T22:44:12+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0850s ]
+
+[ 2017-05-13T22:44:21+08:00 ] ::1 /index.php?c=Index&a=updatereport?code1=custom&code2=enchanteur_pc&code3=enchanteurproduct_ganenhuikui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:updatereport?code1=custom
+
+[ 2017-05-13T22:58:40+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-13T22:58:41+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0880s ]
+
+[ 2017-05-13T23:00:00+08:00 ] ::1 /index.php?c=Index&a=updatereport&code1=custom&code2=enchanteur_pc&code3=enchanteurproduct_ganenhuikui
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ws_report` [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `reportdetail` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `ws_report` WHERE ( datestr='2017-05-13' )  [ RunTime:0.0390s ]
+SQL: INSERT INTO `ws_report` (`datestr`,`pc_arrive`) VALUES ('2017-05-13','1') [ RunTime:0.0390s ]
+SQL: SELECT * FROM `reportdetail` WHERE `code1` = 'custom' AND `code2` = 'enchanteur_pc' AND `code3` = 'enchanteurproduct_ganenhuikui' AND `datestr` = '2017-05-13'  [ RunTime:0.0380s ]
+SQL: INSERT INTO `reportdetail` (`code1`,`code2`,`code3`,`datestr`,`times`) VALUES ('custom','enchanteur_pc','enchanteurproduct_ganenhuikui','2017-05-13','1') [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-05-13T23:26:34+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T23:26:34+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0840s ]
+
+[ 2017-05-13T23:26:41+08:00 ] ::1 /index.php?c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T23:26:53+08:00 ] ::1 /index.php?c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-13T23:28:38+08:00 ] ::1 /index.php?c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-05-13T23:28:43+08:00 ] ::1 /index.php?c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T23:30:42+08:00 ] ::1 /index.php?c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-05-13T23:41:38+08:00 ] ::1 /index.php?c=Index&a=spcenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-13T23:41:39+08:00 ] ::1 /index.php?c=Index&a=loadimgmap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `imgmap` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `imgmap`  [ RunTime:0.0770s ]
+
